@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Frijole&       family=Oxanium:wght@600&display=swap" rel="stylesheet">
+
+        <title>Calculadora y cronómetro</title>
+        
+    </head>
+    <body>
+        <div class="navegador">
+            <nav class="navegador-total">
+
+                <a href="/index.html"><img src="imagenes/Logo-2.png" class="logo"></a>
+
+                <ul class="navegador-menu">
+                    <li>
+                        <a class="Letras" href="index.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a class="Letras" href="calculadora.html">Calculadora</a>
+                    </li>
+
+                    <li>
+                        <a class="Letras" href="cronometro.html">Cronómetro</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+
+            <div class="estructura">
+                <div class="tablero"><p class="digitos">0</p></div>
+                <div class="numeroSignos">
+                    <ul class="columna-1">
+                        <li><button id="borrarTodo" class="boton">C</button></li>
+                        <li><button id="borrar" class="boton">&#9003;</button></li>
+                        <li><button id="porcentaje" class="boton">%</button></li>
+                        <li><button id="division" class="boton">&#247;</button></li>
+                    </ul>
+
+                    <ul class="columna-2">
+                        <li><button id="siete" class="boton">7</button></li>
+                        <li><button id="ocho" class="boton">8</button></li>
+                        <li><button id="nueve" class="boton">9</button></li>
+                        <li class="por"><button id="multiplicacion" class="boton">x</button></li>
+                    </ul>
+
+                    <ul class="columna-3">
+                        <li><button id="cuatro" class="boton">4</button></li>
+                        <li><button id="cinco" class="boton">5</button></li>
+                        <li><button id="seis" class="boton">6</button></li>
+                        <li class="menos"><button id="restar" class="boton">-</button></li>
+                    </ul>
+
+                    <ul class="columna-4">
+                        <li><button id="uno" class="boton">1</button></li>
+                        <li><button id="dos" class="boton">2</button></li>
+                        <li><button id="tres" class="boton">3</button></li>
+                        <li class="mas"><button id="suma" class="boton">+</button></li>
+                    </ul>
+
+                    <ul class="columna-5">
+                        <li><button id="punto" class="boton">.</button></li>
+                        <li><button id="cero" class="boton">0</button></li>
+                        
+                        <li class="igual"><button id="igualdad" class="boton">=</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="calculadora.js"></script>
+    </body>
+</html>
+

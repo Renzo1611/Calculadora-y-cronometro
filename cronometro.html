@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Frijole&       family=Oxanium:wght@600&display=swap" rel="stylesheet">
+
+        <title>Calculadora y cronómetro</title>
+        
+    </head>
+    <body>
+        <div class="navegador">
+            <nav class="navegador-total">
+
+            <a href="/index.html"><img src="imagenes/Logo-2.png" class="logo"></a>
+
+                <ul class="navegador-menu">
+                    <li>
+                        <a class="Letras" href="index.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a class="Letras" href="calculadora.html">Calculadora</a>
+                    </li>
+
+                    <li>
+                        <a class="Letras" href="cronometro.html">Cronómetro</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+
+            <div class="estructuraCronometro">
+                <ul class="cuadrado">
+                    <li  id="horas" class="tiempo">00</li>
+                </ul>
+
+                <ul class="cuadrado">
+                    <li id="minutos" class="tiempo">00</li>
+                </ul>
+
+                <ul class="cuadrado">
+                    <li id="segundos" class="tiempo">00</li>
+                </ul>
+            </div>
+
+            <div class="pausa">
+                <button id="play" class="botonCr">&#9654;&#65039;</button>
+                <button id="pausa" class="botonCr">&#9208;&#65039;</button>
+                <button id="seguir" class="botonCr">&#9209;&#65039;</button>
+            </div>
+
+        </div>
+        <script src="cronometro.js"></script>
+    </body>
+</html>        
+

@@ -1,0 +1,424 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+
+    background-color: #4a1212;
+    background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23010101' fill-opacity='0.67' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
+    height: auto;
+    font-size: 16px;
+    
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+.navegador{
+
+    width: 90%;
+    margin: auto;
+    
+}
+
+.navegador-total{
+
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0px;
+    margin:2em 0;
+    
+}
+
+.logo{
+
+    width: 80px;
+    margin-left: 150px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.logo:hover{
+
+    filter: contrast(200%);  
+   
+}
+
+
+
+.navegador-menu{
+
+    display: flex;
+    list-style-type: none;
+    
+    
+    
+}
+
+.navegador-menu li{
+
+    margin: 1em 1em;
+    padding: 1em 1em;  
+}
+
+
+
+.navegador-total ul.navegador-menu{
+
+    flex: 1;
+    margin-left: 520px;
+    
+
+}
+
+/* comienza el main*/
+main{
+
+    color: white;
+    display: flex   ;
+    margin: 2em 4em;
+   
+}
+
+main img{
+
+    width: 120px;
+   
+}
+
+main button{
+    background-color: rgb(129, 12, 12); 
+    padding: 5px 35px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 1s;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+main button:hover{
+
+    
+    background-color: red;
+    border-color: goldenrod;
+    
+}
+
+.calculadora{
+
+    
+    text-align: center;
+    background-color: black;
+    width: 20%;
+    margin: 0 11em;
+    border: 3px solid;
+    border-color: gray;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 250px;
+    height:380px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.calculadora:hover{
+
+    color: goldenrod;
+    border-color: goldenrod;
+    box-shadow: 8px 8px  3px 3px black;
+    
+}
+
+
+.calculadora h1{
+
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10px 10px;
+
+}
+
+.calculadora p{
+
+    margin: 10px 10px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+
+
+
+.cronometro{
+    
+    text-align: center;
+    background-color: black;
+    width: 20%;
+    border: 3px solid;
+    border-color: gray;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 250px;
+    height:380px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.cronometro:hover{
+
+    color: goldenrod;
+    border-color: goldenrod;
+    box-shadow: 8px 8px  3px 3px black;
+
+}
+
+.cronometro h1{
+
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10px 10px;
+
+}
+
+.cronometro p{
+
+    margin: 10px 10px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+.cronometro button{
+
+    margin-top: 56px;
+}
+
+
+/* Aqui empieza calculadora.html*/
+
+.estructura{
+
+    background-color: black;
+    border: 2px solid;
+    border-color: gray;
+    height: 450px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 30px;
+    font-family: 'Frijole', cursive;
+    font-family: 'Oxanium', cursive;
+    transition: 1s;
+}
+
+.estructura:hover{
+
+    box-shadow: 8px 8px  3px 3px black; 
+}
+
+.tablero{
+
+    height: 70px;
+    width: 425px;
+    background-color: rgb(129, 211, 7);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+    
+}
+
+.tablero p{
+
+    text-align: right;
+    font-size: 50px;
+    margin-right: 10px; 
+    position: relative;
+    margin: 20px; 
+    top: 10px;
+}
+
+.numeroSignos{
+
+   
+   display: inline-block;
+   position: relative;
+   top: 30px;
+   margin: 0 50px;
+
+}
+
+.columna-1{
+
+    display: flex;
+    
+}
+
+.columna-1 button{
+
+    color: red;
+    
+}
+
+.columna-2{
+
+    display: flex;
+}
+
+.columna-2 .por button{
+
+    color: red;
+}
+
+.columna-3{
+
+    display: flex;
+}
+
+.columna-3 .menos button{
+
+    color: red;
+}
+
+.columna-4{
+
+    display: flex;
+}
+
+.columna-4 .mas button{
+
+    background-color: red;
+    height: 100px;
+    position: absolute;
+    color: aliceblue;
+    
+}
+
+.columna-5{
+
+    display: flex;
+}
+
+.columna-5 .igual button{
+
+    background-color: skyblue;
+    color: aliceblue;
+}
+
+.boton{
+
+    width: 80px;
+    height: 40px;
+    margin:10px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+    
+      
+}
+
+.boton:hover{
+
+    font-size: 30px;
+    border-color: goldenrod;
+    
+   
+
+}
+
+/*Aquí comienza el cronómetro*/
+
+.estructuraCronometro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.cuadrado{
+
+    background: black;
+    color: aliceblue;
+    width: 300px;
+    height: 250px;
+    margin: 3em 1em;
+    border: 3px solid gray;
+    border-radius: 20px;
+    
+}
+
+.tiempo{
+
+    position: relative;
+    top: 20%;
+    font-size: 150px;
+}
+
+.pausa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+.botonCr{
+
+    width: 150px;
+    height: 100px;
+    font-size: 70px;
+    background: none;
+    color: white;
+    cursor: pointer;    
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    transition: 1s;
+}
+
+.botonCr:hover{
+
+    font-size: 75px; 
+
+}
+
+@media screen and (max-width: 767px) {
+
+    
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+   
+ 
+}
+
